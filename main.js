@@ -1,30 +1,37 @@
 // Answer the following questions in this file using comments without running the code
 
+//I went through and did the assignment by listing my answers/guesses.
+//I console.logged each of them after so I could check my understanding.  I didn't
+//change my answers after seeing what they should be but did note that I was incorrect
+//and why i thought the answer was what it was unless I wasn't sure why it was which
+//I also noted.
+
 // 1.
 // What does `givenName` equal right now?
 let givenName;
-// A: nothing (undefined)
-
+// A: nothing (console will log undefined)
+console.log(givenName);
 
 // 2.
 // What is `givenName` set to right now?
 givenName = "Tim";
 // A: Tim
-
+console.log(givenName);
+//console will log Tim
 
 // 3.
 // What is `givenName` set to right now?
 givenName = givenName;
-// A: itself
-
+// A: itself... so Tim?
+console.log(givenName);
 
 // 4.
 // What is `greeting` set to?
 let greeting = "Hello, how are you? " + givenName;
 // A: greeting is set to the string Hello, how are you? concatenated with whatever
 //value would potentially be assigned to the variable givenName
-
-
+//using the above value, console will log Hello, how are you? Tim
+console.log(greeting);
 // 5.
 // What is `math` set to?
 let high = 50;
@@ -32,14 +39,16 @@ let low  = 10;
 let math = high - low;
 // A: math is set to the difference of whatever value would potentially be assigned
 //to the variable high and whatever value would be assigned to the variable low.
-
-
+//in this example the console would log 40.
+console.log(math);
 // 6.
 // What is `math` set to?
-math = high - "5";
+mathExample = high - "5";
 // A: math is set to whatever value would potentially be assigned to the variable
-//high minus the string 5.
-
+//high minus the string 5. using the above value the console would log
+// 50 - 5
+//XX The answer to this is 45 although i'm not sure why
+console.log(mathExample);
 
 // 7.
 // Create a variable to calculate Tim's age
@@ -49,7 +58,7 @@ let born = 1984;
 let today = 2017;
 // A:
 let timsAge = "Tim is " + (today - born) + " years old"
-
+console.log(timsAge);
 // 8.
 // Adjust this code. Store some information in the following variables.
 // A:
@@ -64,14 +73,14 @@ let instructorName = "Doug";
 
 // This statement should read correctly
 let statement = yourName + " is taking a class at The Iron Yard, my instructor's name is " + instructorName;
-
+console.log(statement);
 
 // 10.
 // We've created a variable named after each primitive type.
 // Use the `=` operator to assign a value to each variable matching the type in the name.
 let myNumber = 10;
 let myString = "words go here";
-let myBooleanm = false;
+let myBoolean = false;
 // This one's a little tricky - think carefully about what makes a value "undefined"!
 let myUndefined;
 // A: nothing needs to be done.  It's undefined because it's a declared variable
@@ -82,48 +91,59 @@ let myUndefined;
 
 // 11.
 let x = (false == 0);
+console.log(x);
 // A. true
 
 
 // 12.
 let y = (false == "");
+console.log(y);
 // A. true
 
 
 // 13.
 let z = (0 == "");
+console.log(z);
 // A. true
 
 
 // 14.
 let a = (null == null);
+console.log(a);
 // A. true
 
 
-// 25.
+// 15.
 let b = (undefined == undefined);
+console.log(b);
 // A. true
 
 
 // 16.
 let c = (undefined == null);
+console.log(c);
 // A. false
-
+//XX is true because both undefined and null are false
+//so (false == false) evaluates to true
 
 // 17.
 let d = (null == false);
+console.log(d);
 // A. false
 
 
 // 18.
 let e = (NaN == null);
+console.log(e);
 // A. false
 
 
 // 19.
 let f = (NaN == NaN);
+console.log(f);
 // A. true
-
+//XX the console evaluates this to false but i'm not sure why since
+//since it seems false == false should evaluate to true?
 
 // 20.
 // Fix the `if...else` statement below by adding an `if` keyword and conditional expression.
@@ -207,6 +227,8 @@ if({}){
 	console.log("False!");
 }
 // A:False
+//XX console evaluates to true and i have not a clue
+//why
 
 
 // 28.
@@ -216,7 +238,8 @@ if({name: "Yehuda Katz"}){
 	console.log("False!");
 }
 // A: False
-
+// XX console evaluates to true and not sure why...i'm not
+//familiar with the syntax in the condition
 
 // 29.
 if(new Date()){
@@ -225,6 +248,7 @@ if(new Date()){
 	console.log("False!");
 }
 // A: False
+// XX same as 27 and 28
 
 
 // 30.
